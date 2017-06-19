@@ -1,0 +1,22 @@
+vi:
+  static_pages:
+    home:
+      hello: "Xin chào"
+      title: "Trang web học Ruby cơ bản"
+      home: "Trang chủ"
+      about: "Thông tin"
+      help: "Trợ giúp"
+      log_in: "Đăng nhập"
+      name: "Ứng dụng mẫu"
+      sign_up: "Đăng ký"
+      contact: "Liên lạc"
+      news: "Tin tức"
+      welcome: "Chào mừng đến với Ứng dụng mẫu"
+      home_text1: "Đây là trang chủ của"
+      home_text2: "mẫu ứng dụng."
+      rails_tutorial: "Hướng dẫn về Ruby on Rails"
+      by: "bởi"
+      help_1: "Nhận trợ giúp về Hướng dẫn Ruby on Rails tại"
+      help_2: "Hướng dẫn Ruby on Rails"
+      contact_1: "Liên hệ với Hướng dẫn của Ruby on Rails tại"
+      contact_2: "Trang liên lạc."

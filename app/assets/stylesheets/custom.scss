@@ -1,0 +1,102 @@
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+
+body {
+  padding-top: 60px;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+  .center h1 {  margin-bottom: 10px;  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+$light-gray: #777;
+
+h2 {
+  color: $light-gray;
+  font-size: 1.2em;
+  font-weight: normal;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+$color1: #fff;
+
+.logo {
+  color: $color1;
+  float: left;
+  font-size: 1.7em;
+  font-weight: bold;
+  letter-spacing: -1px;
+  margin-right: 10px;
+  padding-top: 9px;
+  text-transform: uppercase;
+}
+
+.logo:hover {
+  color: $color1;
+  text-decoration: none;
+}
+
+$color4: #eaeaea;
+$color2: #555;
+$color3: #222;
+
+footer {
+  border-top: 1px solid $color4;
+  color: $light-gray;
+  margin-top: 45px;
+  padding-top: 5px;
+
+  a {
+    color: $color2;
+  }
+
+  a:hover {
+    color: $color3;
+  }
+
+  small {
+    float: left;
+  }
+
+  ul {
+    float: right;
+    list-style: none;
+
+    li {
+      float: left;
+      margin-left: 15px;
+    }
+  }
+}
