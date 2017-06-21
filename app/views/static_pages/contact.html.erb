@@ -1,0 +1,14 @@
+<% provide :title, t("static_pages.home.contact") %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= yield :title %> | <%= t "static_pages.home.name" %></title>
+  </head>
+  <body>
+    <h1><%= t "static_pages.home.contact" %></h1>
+    <p>
+      <%= t "static_pages.home.contact_1" %>
+      <a href="http://www.railstutorial.org/contact"><%= t "static_pages.home.contact_2" %></a>.
+    </p>
+  </body>
+</html>
