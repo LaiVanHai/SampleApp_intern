@@ -24,3 +24,6 @@
 /.idea/*
 /config/secrets.yml
 /config/database.yml
+.rubocop.yml
+.rubocop_disabled.yml
+.rubocop_enabled.yml
