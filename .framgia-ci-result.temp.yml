@@ -8,25 +8,25 @@ bundle-audit:
   ignore: false
 eslint:
   comment: true
-  exit_code: 2
+  exit_code: 0
   ignore: false
 rails_best_practices:
   comment: true
-  exit_code: 2
+  exit_code: 0
   ignore: false
 reek:
   comment: true
-  exit_code: 2
+  exit_code: 0
   ignore: false
 rspec:
   comment: true
-  exit_code: 2
+  exit_code: 0
   ignore: false
 rubocop:
   comment: true
-  exit_code: 2
+  exit_code: 0
   ignore: false
 scss-lint:
   comment: true
-  exit_code: 2
+  exit_code: 0
   ignore: false
