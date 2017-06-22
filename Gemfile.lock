@@ -90,6 +90,9 @@ GEM
     coffee-script-source (1.12.2)
     colorize (0.8.1)
     concurrent-ruby (1.0.5)
+    config (1.4.0)
+      activesupport (>= 3.0)
+      deep_merge (~> 1.1.1)
     cucumber (2.4.0)
       builder (>= 2.1.2)
       cucumber-core (~> 1.5.0)
@@ -108,6 +111,7 @@ GEM
       railties (>= 4, < 5.2)
     cucumber-wire (0.0.1)
     database_cleaner (1.6.1)
+    deep_merge (1.1.1)
     descendants_tracker (0.0.4)
       thread_safe (~> 0.3, >= 0.3.1)
     diff-lcs (1.3)
@@ -304,6 +308,7 @@ DEPENDENCIES
   bundler-audit
   byebug
   coffee-rails (~> 4.2)
+  config
   cucumber-rails
   database_cleaner (~> 1.5)
   eslint-rails!
