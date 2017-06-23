@@ -2,3 +2,9 @@ IrresponsibleModule:
   enabled: false
 UncommunicativeVariableName:
   enabled: false
+InstanceVariableAssumption:
+  enabled: false
+FeatureEnvy:
+  exclude:
+    - "SessionsHelper#remember"
+    - "UsersHelper#gravatar_for"
