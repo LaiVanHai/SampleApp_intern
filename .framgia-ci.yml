@@ -15,4 +15,4 @@ test:
   eslint:
     command: eslint --format=checkstyle --output-file=.framgia-ci-reports/eslint.xml app/
   rails_best_practices:
-    command: bundle exec rails_best_practices --format html -e "app/models/application_record.rb,app/models/group_user.rb,app/controllers/pages_controller.rb,app/controllers/groups_controller.rb" --output-file .framgia-ci-reports/rails_best_practices.html app/
+    command: bundle exec rails_best_practices -c .rails_best_practices.yml --format html --exclude "app/models/application_record.rb,app/models/user.rb,app/helpers/sessions_helper.rb,app/controllers/**" --output-file .framgia-ci-reports/rails_best_practices.html app/

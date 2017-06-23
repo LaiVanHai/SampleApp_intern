@@ -20,3 +20,43 @@ vi:
       help_2: "Hướng dẫn Ruby on Rails"
       contact_1: "Liên hệ với Hướng dẫn của Ruby on Rails tại"
       contact_2: "Trang liên lạc."
+  sign_up:
+    name: "Tên đăng nhập:"
+    password: "Mật khẩu:"
+    confirmation: "Xác nhận mật khẩu:"
+    create: "Tạo tài khoản mới"
+    wellcome: "Chào mừng đến với trang ứng dụng mẫu"
+    error: "lỗi"
+    form_contain: "Biểu mẫu này có chứa"
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            name:
+              blank: "Tên không được để trống"
+            email:
+              blank: "Email không được để trống"
+              invalid: "Địa chỉ email không hợp lệ"
+              taken: "Email đã được sử dụng"
+            password:
+              blank: "Mật khẩu không được để trống"
+              too_short: "Mật khẩu quá ngắn"
+            password_confirmation:
+              confirmation: "Hai mật khẩu không khớp"
+  404_err:
+    err1: "Trang bạn đang tìm kiếm không tồn tại (404)"
+    err2: "Trang bạn đang tìm kiếm không tồn tại."
+    err3: "Có thể bạn đã nhập sai địa chỉ hoặc trang có thể đã di chuyển."
+    err4: "Nếu bạn là chủ sở hữu ứng dụng kiểm tra các bản ghi để biết thêm thông tin."
+  login:
+    login: "Đăng nhập"
+    signup: "Đăng ký ngay!"
+    new_use: "Người dùng mới?"
+    error: "Email hoặc mật khẩu không đúng."
+    users: "Người sử dụng"
+    profile: "Hồ sơ"
+    setting: "Cài đặt"
+    logout: "Đăng xuất"
+    remember: "Ghi nhớ tôi"
+    account: "Tài khoản"
