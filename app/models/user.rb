@@ -21,15 +21,16 @@ class User < ApplicationRecord
   end
 
   def authenticated? remember_token
-    if remember_digest.nil?
-      false
-    else
-      BCrypt::Password.new(remember_digest).is_password? remember_token
-    end
+    return false unless remember_digest
+    BCrypt::Password.new(remember_digest).is_password? remember_token
   end
 
   def forget
     update_attributes remember_digest: nil
+  end
+
+  def current_user? user
+    self == user
   end
 
   class << self
