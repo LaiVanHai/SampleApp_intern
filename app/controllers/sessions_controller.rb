@@ -8,9 +8,15 @@ class SessionsController < ApplicationController
     user = @user
     sessions = @sessions
     if user && user.authenticate(sessions[:password])
-      log_in user
-      sessions[:remember_me] == "1" ? remember(user) : forget(user)
-      redirect_back_or user
+      if user.activated?
+        log_in user
+        sessions[:remember_me] == "1" ? remember(user) : forget(user)
+        redirect_back_or user
+      else
+        message = t "activation.acc_not_activ"
+        flash[:warning] = message
+        redirect_to root_url
+      end
     else
       flash[:danger] = t "login.error"
       render :new

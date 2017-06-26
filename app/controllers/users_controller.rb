@@ -5,7 +5,7 @@ class UsersController < ApplicationController
   before_action :admin_user, only: :destroy
 
   def index
-    @users = User.paginate page: params[:page]
+    @users = User.active.paginate page: params[:page]
   end
 
   def new
@@ -16,8 +16,9 @@ class UsersController < ApplicationController
     @user = User.new user_params
     user = @user
     if user.save
-      flash[:success] = t "sign_up.wellcome"
-      redirect_to user
+      user.send_activation_email
+      flash[:info] = t "activation.info"
+      redirect_to root_url
     else
       render :new
     end
@@ -68,7 +69,8 @@ class UsersController < ApplicationController
   end
 
   def find_user
-    @user = User.find_by id: params[:id] if params[:id]
+    param = params[:id]
+    @user = User.find_by id: param if param
     unless @user
       render file: Rails.root.join("public", "404.html.erb"),
         layout: false, status: 404

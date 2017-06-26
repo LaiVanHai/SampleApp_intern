@@ -16,7 +16,7 @@ rails_best_practices:
   ignore: false
 reek:
   comment: true
-  exit_code: 512
+  exit_code: 0
   ignore: false
 rspec:
   comment: true

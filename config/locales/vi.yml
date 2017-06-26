@@ -71,3 +71,15 @@ vi:
     del: "Đã xóa tài khoản"
     delete: "Xóa"
     sure: "Bạn có chắc chắn không?"
+  activation:
+    acc_activ: "Kích hoạt tài khoản"
+    acc_not_activ: "Tài khoản chưa kích hoạt "
+    hi: "Xin chào"
+    welcome: "Chào mừng đến với Sample App! Vui lòng click vào link sau để kích hoạt tài khoản:"
+    check_mail: "Kiểm tra email để lấy link kích hoạt."
+    info: "Vui lòng kiểm tra email để kích hoạt tài khoản"
+    succ: "Tài khoản đã kích hoạt"
+    danger: "Liên kết kích hoạt không hợp lệ"
+  reset:
+    find: "Tìm tôi tại"
+    text: "Người dùng - Đặt lại mật khẩu"
