@@ -2,7 +2,8 @@ class UsersController < ApplicationController
   def show
     @user = User.find_by id: params[:id]
     unless @user
-      render file: "#{Rails.root}/public/404.html.erb", layout: false, status: 404
+      render file: Rails.root.join("public", "404.html.erb"),
+        layout: false, status: 404
     end
   end
 
