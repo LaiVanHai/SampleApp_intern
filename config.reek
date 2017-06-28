@@ -2,13 +2,15 @@ IrresponsibleModule:
   enabled: false
 UncommunicativeVariableName:
   enabled: false
+Attribute:
+  enabled: false
 InstanceVariableAssumption:
   enabled: false
 TooManyStatements:
   enabled: true
   exclude:
   - initialize
-  max_statements: 10
+  max_statements: 20
 FeatureEnvy:
   exclude:
     - "SessionsHelper#remember"

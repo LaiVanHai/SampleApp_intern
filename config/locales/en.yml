@@ -76,3 +76,15 @@ en:
     del: "User deleted"
     sure: "You sure?"
     delete: "delete"
+  activation:
+    acc_activ: "Account activation"
+    acc_not_activ: "Account not activated. Check your email for the activation link. "
+    hi: "Hi"
+    welcome: "Welcome to the Sample App! Click on the link below to activate your account:"
+    activ: "Activate"
+    info: "Please check your email to activate your account."
+    succ: "Account activated!"
+    danger: "Invalid activation link"
+  reset:
+    find: "find me in"
+    text: "User#password_reset"
