@@ -33,7 +33,7 @@ class SessionsController < ApplicationController
     @sessions = params[:session]
     @user = User.find_by email: @sessions[:email].downcase
     unless @user
-      flash[:danger] = t "invalid_login"
+      flash[:danger] = t "login.invalid"
       redirect_to login_url
     end
   end

@@ -60,6 +60,7 @@ vi:
     logout: "Đăng xuất"
     remember: "Ghi nhớ tôi"
     account: "Tài khoản"
+    invalid: "Đăng nhập thất bại"
   update_user:
     edit: "Chỉnh sửa người dùng"
     update: "Cập nhật hồ sơ"
@@ -83,3 +84,15 @@ vi:
   reset:
     find: "Tìm tôi tại"
     text: "Người dùng - Đặt lại mật khẩu"
+    forgot: "(quên mật khẩu)"
+    pass_fotgot: "Quên mật khẩu"
+    submit: "Gửi"
+    email_send: "Link đặt lại mật khẩu đã gửi tới email của bạn"
+    email_err: "Địa chỉ email không tìm thấy"
+    pass: "Đặt lại mật khẩu"
+    mail_text1: "Để đặt lại mật khẩu ấn vào đường dẫn bên dưới "
+    mail_text2: "Đường dẫn này có hiệu lực trong vòng 2 giờ"
+    update: "Cập nhật mật khẩu"
+    expried: "Đã hết thời gian đặt lại mật khẩu"
+    empty: "không được để trống"
+    succ: "Mật khẩu đã được đặt lại"
