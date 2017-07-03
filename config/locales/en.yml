@@ -65,6 +65,7 @@ en:
     logout: "Log out"
     remember: "Remember me on this compute"
     account: "Account"
+    invalid: "Invalid login"
   update_user:
     edit: "Edit user"
     update: "Update your profile"
@@ -88,3 +89,15 @@ en:
   reset:
     find: "find me in"
     text: "User#password_reset"
+    forgot: "(forgot password)"
+    pass_fotgot: "Forgot password"
+    submit: "Submit"
+    email_send: "Email sent with password reset instructions"
+    email_err: "Email address not found"
+    pass: "Password reset"
+    mail_text1: "To reset your password click the link below:"
+    mail_text2: "This link will expire in two hours."
+    update: "Update password"
+    expried: "Password reset has expired."
+    empty: "can't be empty"
+    succ: "Password has been reset."
