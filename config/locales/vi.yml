@@ -44,6 +44,10 @@ vi:
               too_short: "Mật khẩu quá ngắn"
             password_confirmation:
               confirmation: "Hai mật khẩu không khớp"
+        micropost:
+          attributes:
+            content:
+              blank: "Nội dung không được để trống."
   404_err:
     err1: "Trang bạn đang tìm kiếm không tồn tại (404)"
     err2: "Trang bạn đang tìm kiếm không tồn tại."
@@ -96,3 +100,21 @@ vi:
     expried: "Đã hết thời gian đặt lại mật khẩu"
     empty: "không được để trống"
     succ: "Mật khẩu đã được đặt lại"
+  micropost:
+    micropost: "Bài đăng"
+    succ: "Đăng bài thành công!"
+    view_pro: "Xem trang hồ sơ của tôi"
+    new: "Soạn bài đăng mới..."
+    post: "Đăng"
+    posted: "Đã đăng"
+    feed: "Danh sách bài đăng"
+    ago: "trước đây."
+    delete: "Bài đăng đã bị xóa."
+    err: "Kích cỡ nên nhỏ hơn 5MB"
+    notice: "Kích cỡ tệp lớn nhất là 5MB, vui lòng chọn tệp nhỏ hơn"
+    err2: "Đã xảy ra lỗi"
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: "khoảng 1 giờ"
+        other: "khoảng %{count} giờ"

@@ -3,9 +3,7 @@
   <head>
     <title><%= t("static_pages.home.name") %></title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track": "reload" %>
-    <%= javascript_include_tag "application", "data-turbolinks-track": "reload" %>
     <%= render "layouts/shim" %>
   </head>
 
@@ -19,5 +17,6 @@
       <%= render "layouts/footer" %>
       <%= debug(params) if Rails.env.development? %>
     </div>
+    <%= javascript_include_tag "application", "data-turbolinks-track": "reload" %>
   </body>
 </html>

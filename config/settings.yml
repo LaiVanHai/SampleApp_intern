@@ -1,3 +1,7 @@
 name_maximum_length: 50
 email_maximum_length: 255
 password_minimum_length: 6
+img_height: 400
+img_weight: 400
+micropost_size: 50
+content_max: 140

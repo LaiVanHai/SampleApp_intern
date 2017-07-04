@@ -34,3 +34,4 @@
 /config/settings/test.yml
 /config/environment_variables.yml
 /test/*
+/public/uploads
