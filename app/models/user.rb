@@ -1,10 +1,14 @@
 class User < ApplicationRecord
-  scope :active, ->{where activated: true}
+  VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
+
   attr_accessor :remember_token, :activation_token, :reset_token
+
+  has_many :microposts, dependent: :destroy
 
   before_create :create_activation_digest
   before_save :downcase_email
-  VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
+
+  scope :active, ->{where activated: true}
 
   validates :name, presence: true,
     length: {maximum: Settings.name_maximum_length}
@@ -56,6 +60,10 @@ class User < ApplicationRecord
 
   def password_reset_expired?
     reset_sent_at < 2.hours.ago
+  end
+
+  def feed
+    microposts.newest_first
   end
 
   class << self

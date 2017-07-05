@@ -139,6 +139,11 @@ aside {
       text-align: left;
     }
   }
+
+  textarea {
+    height: 100px;
+    margin-bottom: 5px;
+  }
 }
 
 .gravatar {
@@ -197,5 +202,52 @@ $red: #f00;
     border-bottom: 1px solid $gray-lighter;
     overflow: auto;
     padding: 10px 0;
+  }
+}
+
+$color6: #e8e8e8;
+
+.microposts {
+  list-style: none;
+  padding: 0;
+
+  li {
+    border-top: 1px solid $color6;
+    padding: 10px 0;
+  }
+
+  .user {
+    margin-top: 5em;
+    padding-top: 0;
+  }
+
+  .content {
+    display: block;
+    margin-left: 60px;
+
+    img {
+      display: block;
+      padding: 5px 0;
+    }
+  }
+
+  .timestamp {
+    color: $gray-light;
+    display: block;
+    margin-left: 60px;
+  }
+
+  .gravatar {
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+}
+
+span .picture {
+  margin-top: 10px;
+
+  input {
+    border: 0;
   }
 }

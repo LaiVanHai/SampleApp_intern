@@ -5,15 +5,35 @@
     <title><%= yield :title %> | <%= t "static_pages.home.name" %></title>
   </head>
   <body>
-    <div class="center jumbotron">
-      <h1><%= t "static_pages.home.welcome" %></h1>
-      <h2>
-        <%= t("static_pages.home.home_text1") %>
-         <a href="http://www.railstutorial.org/"><%= t("static_pages.home.rails_tutorial") %></a>
-        <%= t("static_pages.home.home_text2") %>
-      </h2>
-     <%= link_to t("static_pages.home.sign_up"), signup_url, class: "btn btn-lg btn-primary" %>
-    </div>
-    <%= link_to image_tag("rails.png", alt: "Rails logo"), 'http://rubyonrails.org/' %>
+    <% if logged_in? %>
+      <div class="row">
+        <aside class="col-md-4">
+          <section class="user_info">
+            <%= render "shared/user_info" %>
+          </section>
+          <section class="micropost_form">
+            <%= render "shared/micropost_form", micropost: @micropost %>
+          </section>
+        </aside>
+        <div class="col-md-8">
+          <h3><%= t "micropost.feed" %></h3>
+          <%= render "shared/feed", feed_item: @feed_items %>
+        </div>
+      </div>
+    <% else %>
+      <div class="center jumbotron">
+        <h1><%= t "static_pages.home.welcome" %></h1>
+        <h2>
+          <%= t("static_pages.home.home_text1") %>
+           <a href="http://www.railstutorial.org/">
+             <%= t("static_pages.home.rails_tutorial") %></a>
+          <%= t("static_pages.home.home_text2") %>
+        </h2>
+       <%= link_to t("static_pages.home.sign_up"), signup_url,
+        class: "btn btn-lg btn-primary" %>
+      </div>
+      <%= link_to image_tag("rails.png", alt: "Rails logo"),
+        "http://rubyonrails.org/" %>
+    <% end %>
   </body>
 </html>
